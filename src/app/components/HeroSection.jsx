@@ -37,7 +37,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Ghouini Dirar, 23 years old, Software Engineer graduated from the High School of Computer Science, Sidi Bel Abbes.
+            Ghouini Dirar, 23 years old, Software Engineer graduated from the Higher School of Computer Science, Sidi Bel Abbes.
           </p>
           <div>
             <Link
