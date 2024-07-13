@@ -7,58 +7,41 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "SOAR-SHIELD",
+    description: " Find the vulnerabilities and reporting detect and block the malicious traffic manage the company devices routers,firewalls ...Using machine learning and React js and Node js .",
+    image: "/images/projects/1.jpg",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "EVENTU ",
+    description: "Mangement conferences plateform using React.js and Laravel .",
+    image: "/images/projects/33.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/ZKarim13/soar",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "DIAPREDICT",
+    description: "Detection and predection of the diabetes and diabetic retionpathy using deep learning and React js and fastapi.",
+    image: "/images/projects/dia.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Plantabird",
+    description: "Devloping plateform using laravel for the complany plantabird which is passionate about birds and committed to providing the best products and advice for the well-being of your feathered companions.",
+    image: "/images/projects/p.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Dirarghgh/plantabird",
+    previewUrl: "https://plantabird.com/",
   },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+ 
 ];
 
 const ProjectsSection = () => {
@@ -84,23 +67,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
-      </div>
+     
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
