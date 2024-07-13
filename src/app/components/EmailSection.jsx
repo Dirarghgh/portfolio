@@ -1,7 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import LinkedinIcon from "../../../public/linkedin.png";
+import ws from "../../../public/whatsapp.png";
+import te from "../../../public/telegram.png";
+import fb  from "../../../public/fb.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -61,8 +64,20 @@ const EmailSection = () => {
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
           <Link href="https://www.linkedin.com/in/dirar-ghouini-a04720219">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image src={LinkedinIcon} alt="Linkedin Icon" width={48} height={48}/>
           </Link>
+          <Link href="https://wa.me/213540822834">
+    <Image src={ws} alt="WhatsApp" width={48} height={48} />
+</Link>
+
+<Link href="https://web.telegram.org/k/#@Amir_dirar23">
+    <Image src={te} alt="Telegram" width={48} height={48} />
+</Link>
+
+<Link href="https://web.facebook.com/dirar.ghgh">
+    <Image src={fb} alt="Telegram" width={48} height={48} />
+</Link>
+
         </div>
       </div>
       <div>
