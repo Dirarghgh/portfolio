@@ -14,7 +14,7 @@ const TAB_DATA = [
         <li>Css</li>
       
         <li>JavaScript</li>
-        <li>Git</li>
+   
         <li>React js </li>
         <li>Python</li>
         <li>Data science</li>
@@ -24,6 +24,10 @@ const TAB_DATA = [
         <li>UI Design </li>
         <li>Laravel</li>
         <li>Web Scraping</li>
+        <li>Git</li>
+        <li>SQL</li>
+        <li>MongoDB</li>
+        <li>FastAPI</li>
       </ul>
     ),
   },
